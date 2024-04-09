@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GenoInsight</title>
+        <link rel="stylesheet" href="src/styles.css">
+        <script src="src/script.js" defer></script>
+    </head>
+
+    <body>
+        <header class="header pricing-header">
+            <!-- Nav-bar -->
+            <nav id="navbar" class="nav">
+                <a href="home.html" class = "nav-home">GenoInsight</a>
+                <ul class="nav-list">
+                    <li class = "nav-item">
+                        <a href="reports.html" class = "nav-link">Personal reports</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href="tools.html" class = "nav-link">Tools</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href="advanced.html" class = "nav-link">Advance</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href="family.html" class = "nav-link">Family</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href="pricing.html" class = "nav-link">Pricing</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href="subscription.html" class = "nav-link nav-start">Get started</a>
+                    </li>
+                </ul>
+                <!-- Bars to open the nav -->
+                <div class = "hamburger">
+                    <span class="nav-bar"></span>
+                    <span class="nav-bar"></span>
+                    <span class="nav-bar"></span>
+                </div>
+            </nav>
+
+            <section class="header-text">
+                <h1>
+                    Pricing
+                </h1>
+                <p>
+                    Take your genetic potential to new heights. Upgrade your experience, and conect generations through genetic discovery
+                </p>
+            </section>
+
+        </header>
+
+        <main class="container pricing-container">
+            <div class="prices-bg">
+                <div></div>
+                <div></div>
+                <div></div>
+             </div>
+
+            <div class="switch-price">
+                <input id="monthly" type="radio" name="switch">
+                <input id="yearly" type="radio" name="switch" checked>
+                <label for="monthly">Monthly</label>
+                <label for="yearly">Yearly</label>
+                <span class="highlighter"></span>
+            </div>
+
+            <section id="prices">
+                <div class = "price-card">
+                    <h3>
+                        Standard
+                    </h3>
+                    <p>
+                        Get to know your genes better
+                    </p>
+                    <p class = "price-tag monthly hide"> 
+                        <span>10€ </span>/month
+                    </p> 
+                    <div class ="price-tag yearly">
+                        <p> 
+                            <span>8€ </span>/month
+                        </p>
+                        <p class = "year-price"> 
+                            billed annualy
+                        </p>
+                    </div> 
+                    <p> What's included </p>
+                    <ul>
+                        <li> Basic tools </li>
+                        <li> Genetic trait reports</li>
+                    </ul>
+                    <a href="#" class="select-plan" data-plan="Standard"> 
+                        Select plan
+                    </a>
+                </div>
+
+                <div class = "price-card">
+                    <h3>
+                        Advanced
+                    </h3>
+                    <p>
+                        Unlock your genetic potential. Unlock yourself
+                    </p>
+                    <p class = "price-tag monthly hide"> 
+                        <span>20€ </span>/month
+                    </p> 
+                    <div class ="price-tag yearly">
+                        <p> 
+                            <span>18€ </span>/month
+                        </p>
+                        <p class = "year-price"> 
+                            billed annualy
+                        </p>
+                    </div> 
+                    <p> What's included </p>
+                    <ul>
+                        <li> Advanced tools </li>
+                        <li> Disease risk factor reports</li>
+                        <li> Full access to educational resources</li>
+                        <li> Priority customer support</li>
+                    </ul>
+                    <a href="#" class="select-plan" data-plan="Advanced">
+                    Select plan
+                </a>
+                </div>
+
+                <div class = "price-card">
+                    <h3>
+                        Family
+                    </h3>
+                    <p>
+                        Connect generations through genetic discovery
+                    </p>
+                    <p class = "price-tag monthly hide"> 
+                        <span>25€ </span>/month
+                    </p> 
+                    <div class ="price-tag yearly">
+                        <p> 
+                            <span>22€ </span>/month
+                        </p>
+                        <p class = "year-price"> 
+                            billed annualy
+                        </p>
+                    </div>
+                    <p> What's included </p>
+                    <ul>
+                        <li> Comprehensive suite </li>
+                        <li> Ancestral origins & health insights reports</li>
+                        <li> Exclusive educational resources</li>
+                        <li> Priority customer support</li>
+                        <li> Early access to features</li>
+                    </ul>
+                    <a href="#" class="select-plan" data-plan="Family">
+                        Select plan
+                    </a>
+                </div>
+
+            </section>  
+        
+            <section class="plan-question">
+                <h2 id="not-sure-plan" style="cursor: pointer;">Not sure which plan to get?</h2>
+                <div id="questionnaire" style="display: none;">
+                    <h3 id="question-text1">What are you looking to achieve with GenoInsight?</h3>
+                    <form id="question-form1">            
+                        <input type="radio" id="answer1a" name="answer1" value="health">
+                        <label for="answer1a">Better understand my health</label><br>
+                        <input type="radio" id="answer1b" name="answer1" value="potential">
+                        <label for="answer1b">Unlock my genetic potential</label><br><br>
+                        
+                        <button type="button" id="submit-answer1">Next</button>
+                    </form>
+            
+                    <h3 id="question-text2" style="display: none;">How familiar are you with genetic testing?</h3>
+                    <form id="question-form2" style="display: none;">            
+                        <input type="radio" id="answer2a" name="answer2" value="beginner">
+                        <label for="answer2a">Beginner</label><br>
+                        <input type="radio" id="answer2b" name="answer2" value="experienced">
+                        <label for="answer2b">Experienced</label><br><br>
+                        
+                        <button type="button" id="submit-answer2">Next</button>
+                    </form>
+            
+                    <h3 id="question-text3" style="display: none;">Are you interested in exploring your ancestry?</h3>
+                    <form id="question-form3" style="display: none;">            
+                        <input type="radio" id="answer3a" name="answer3" value="yes">
+                        <label for="answer3a">Yes</label><br>
+                        <input type="radio" id="answer3b" name="answer3" value="no">
+                        <label for="answer3b">No</label><br><br>
+                        
+                        <button type="button" id="submit-answer3">Submit</button>
+                    </form>
+                    
+                    <div id="recommendation">
+                        <div class = "price-card standard-card question-card">
+                            <h3>
+                                Standard
+                            </h3>
+                            <p>
+                                Get to know your genes better
+                            </p>
+                            <p class = "price-tag monthly hide"> 
+                                <span>10€ </span>/month
+                            </p> 
+                            <div class ="price-tag yearly">
+                                <p> 
+                                    <span>8€ </span>/month
+                                </p>
+                                <p class = "year-price"> 
+                                    billed annualy
+                                </p>
+                            </div> 
+                            <a href="#" class="select-plan" data-plan="Standard"> 
+                                Select plan
+                            </a>
+                        </div>
+        
+                        <div class = "price-card advanced-card question-card">
+                            <h3>
+                                Advanced
+                            </h3>
+                            <p>
+                                Unlock your genetic potential. Unlock yourself
+                            </p>
+                            <p class = "price-tag monthly hide"> 
+                                <span>20€ </span>/month
+                            </p> 
+                            <div class ="price-tag yearly">
+                                <p> 
+                                    <span>18€ </span>/month
+                                </p>
+                                <p class = "year-price"> 
+                                    billed annualy
+                                </p>
+                            </div>
+                            <a href="#" class="select-plan" data-plan="Advanced">
+                            Select plan
+                        </a>
+                        </div>
+        
+                        <div class = "price-card family-card question-card">
+                            <h3>
+                                Family
+                            </h3>
+                            <p>
+                                Connect generations through genetic discovery
+                            </p>
+                            <p class = "price-tag monthly hide"> 
+                                <span>25€ </span>/month
+                            </p> 
+                            <div class ="price-tag yearly">
+                                <p> 
+                                    <span>22€ </span>/month
+                                </p>
+                                <p class = "year-price"> 
+                                    billed annualy
+                                </p>
+                            </div>
+                            <a href="#" class="select-plan" data-plan="Family"> 
+                                Select plan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer>
+            <p> 
+                <a href="resources.html">
+                Resources</a>
+                &copy; Programmation Web M1BI 2024 
+            </p> 
+            <a href = "cv_juliette.html">Juliette Maes</a> & <a href="cv_jorge.html">Jorge Martínez</a>
+        </footer>
+    </body>
+</html>
